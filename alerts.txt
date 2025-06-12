@@ -1,0 +1,6 @@
+fetch("alerts.txt")
+  .then(response => response.text())
+  .then(text => {
+    const lines = text.split('\n').filter(Boolean);
+    document.getElementById("ticker-text").textContent = lines.join("   •   ");
+  });
