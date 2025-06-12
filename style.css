@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  background: #001433;
+  font-family: 'Arial', sans-serif;
+  color: white;
+  overflow: hidden;
+}
+
+#container {
+  width: 800px;
+  height: 480px;
+  margin: auto;
+  position: relative;
+  background: #001433;
+  box-shadow: 0 0 15px black;
+}
+
+#radar img {
+  width: 400px;
+  height: 300px;
+  margin: 20px;
+}
+
+#weather-box {
+  position: absolute;
+  top: 20px;
+  left: 440px;
+  width: 340px;
+  padding: 10px;
+  background: #102244;
+  box-shadow: inset 0 0 5px #000;
+}
+
+#weather-box h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+#ticker {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background: yellow;
+  color: black;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+#ticker-text {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
